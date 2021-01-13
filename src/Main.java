@@ -18,6 +18,7 @@ public class Main {
         System.out.println(m.root(256));
         System.out.println(m.rooot(125));
         System.out.println(m.isTriangleRight(4,5,3));
+        System.out.println(m.pow(20.0));
 
     }
 
@@ -36,15 +37,15 @@ public class Main {
     }
 
     public boolean even(int a){
-        if (a%2 != 0)
-            return false;
-        return true;
+        return a % 2 == 0;
     }
 
     public boolean odd(int a) {
-        if (a % 3 != 0 && a % 5 != 0)
-            return false;
-        return true;
+        return a % 3 == 0 || a % 5 == 0;
+    }
+
+    public double pow(double a) {
+        return Math.pow(a, 5);
     }
 
     public int cube(int a) {
